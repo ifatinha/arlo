@@ -1,16 +1,24 @@
 @use "sass:math";
 
-$font-01:"Mulish",
-sans-serif;
-$font-02: "K2D",
-sans-serif;
-$font-03: "Quicksand",
-sans-serif;
+$font-01:"Mulish";
+$font-02: "K2D";
+$font-03: "Quicksand";
 
 @function rem($pixel, $context: 16) {
    @return math.div($pixel, $context)+rem;
 }
 
-@mixin typography-01($size) {}
+@mixin typography-01($size) {
+   font-family: $font-01, $font-02, sans-serif;
+
+   @if($size==14) {
+      font-size: rem($size);
+   }
+
+   @else if($size==16) {
+      font-size  : rem(16);
+      line-height: rem(28);
+   }
+}
 
 @mixin typography-02($size) {}
