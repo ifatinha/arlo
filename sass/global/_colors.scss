@@ -1,0 +1,11 @@
+@use "sass:map";
+
+$theme-color:(
+   --e-global-color-primary: #000000,
+   --e-global-color-secondary: #54595F,
+   --e-global-color-text: #7A7A7A,
+   --e-global-color-accent: #61CE70,
+   --e-global-color-white: #FFFFFF,
+   --e-global-color-blue: #3840d8,
+   --e-global-color-dark: #090909,
+   --global-color-red: #F9004D);

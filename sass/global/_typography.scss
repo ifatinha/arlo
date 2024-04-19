@@ -1,0 +1,16 @@
+@use "sass:math";
+
+$font-01:"Mulish",
+sans-serif;
+$font-02: "K2D",
+sans-serif;
+$font-03: "Quicksand",
+sans-serif;
+
+@function rem($pixel, $context: 16) {
+   @return math.div($pixel, $context)+rem;
+}
+
+@mixin typography-01($size) {}
+
+@mixin typography-02($size) {}
